@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "aluminum",
+	"version": "${0.0.1}",
+	"name": "Aluminum Ascend",
+	"description": "!",
+	"authors": [
+		"Awakey"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/aluminum/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.awakey.aluminum.AluminumAscend"
+		],
+		"client": [
+			"net.awakey.aluminum.AluminumAscendClient"
+		],
+		"fabric-datagen": [
+			"net.awakey.aluminum.AluminumAscendDataGenerator"
+		]
+	},
+	"mixins": [
+		"aluminum.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
